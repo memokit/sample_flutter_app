@@ -27,7 +27,7 @@ class SearchRestaurantController extends GetxController with StateMixin<List<Sea
       await EasyLoading.show();
       NearBySearchResponse? result = await googlePlace.search.getNearBySearch(
         Location(lat: 13.736717, lng: 100.523186),
-        250000,
+        10000,
         type: "restaurant",
         keyword: text,
         name: text,
