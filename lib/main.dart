@@ -11,7 +11,6 @@ void main() {
   runApp(
     GetMaterialApp(
       title: "Sample App",
-      // theme: Themes.light,
       debugShowCheckedModeBanner: false,
       initialRoute: AppPages.INITIAL,
       getPages: AppPages.routes,
