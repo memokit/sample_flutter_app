@@ -37,7 +37,7 @@ class RestaurantDetailView extends GetView<RestaurantDetailController> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(
-                      width: Get.width - 105,
+                      width: Get.width,
                       child: AutoSizeText(
                         state!.name!,
                         maxLines: 1,
