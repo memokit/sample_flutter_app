@@ -38,10 +38,8 @@ class RestaurantDetailView extends GetView<RestaurantDetailController> {
                   children: [
                     SizedBox(
                       width: Get.width,
-                      child: AutoSizeText(
+                      child: Text(
                         state!.name!,
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -51,7 +49,7 @@ class RestaurantDetailView extends GetView<RestaurantDetailController> {
                     ),
                     const SizedBox(height: 5),
                     SizedBox(
-                      width: Get.width - 105,
+                      width: Get.width,
                       child: Text(
                         state.vicinity!,
                         style: TextStyle(
